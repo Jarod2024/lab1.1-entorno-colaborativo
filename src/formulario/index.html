@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro - Ejemplo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Formulario de Registro</h1>
+        <form id="registroForm">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" min="1" max="120" required>
+
+            <label for="pais">País:</label>
+            <select id="pais" name="pais" required>
+                <option value="">Seleccione...</option>
+                <option value="Ecuador">Ecuador</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Perú">Perú</option>
+                <option value="México">México</option>
+            </select>
+
+            <label for="mensaje">Mensaje o comentario:</label>
+            <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <p id="resultado"></p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
