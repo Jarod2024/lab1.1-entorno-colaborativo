@@ -1,0 +1,14 @@
+{
+  "name": "lab1-1-entorno-colaborativo",
+  "version": "1.0.0",
+  "description": "A simple static site with a basic HTTP server.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "author": "",
+  "license": "ISC"
+}
